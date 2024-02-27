@@ -149,7 +149,6 @@ body {
 .oh{
     overflow: hidden;
 }
-
 .hamburger {
     width: 14px;
     height: 10px;
@@ -196,39 +195,6 @@ body {
     top: 9px;
     left: 2px;
 }
-.btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 40px;
-    border-radius: 7px;
-    font-weight: 500;
-    line-height: 128%;
-    padding: 0 34px;
-    transition: var(--transition);
-    color: #fff;
-    background: #bc4749;
-    opacity: 1 ;
-    border: 1px solid #d66567;
-    img{
-        margin-left: 10px;
-        transition: var(--transition);
-    }
-    &:hover {
-        background: #994445;
-        img{
-            transform: translateX(3px);
-        }
-    }
-    &_transparent {
-        border: 1px solid #D0D0D0;
-        box-shadow: 0px 6px 14px 0px rgba(0, 0, 0, 0.10);
-        background: transparent;
-        &:hover {
-            background: rgba(0, 0, 0, 0.10);
-        }
-    }
-}
 .main {
     padding-bottom: 100px;
     position: relative;
@@ -252,18 +218,102 @@ body {
         right: 0px;
     }
 }
-
-.container {
-    width: 100%;
-    max-width: 990px;
-    margin: 0 auto;
-    padding: 0 10px;
-}
-
-
 .wow {
     visibility: hidden;
 }
+.header {
+    &__container {}
+    &__logo {}
+    &__nav-wrap {}
+    &__nav {}
+}
+.container {
+    max-width: 1170px;
+    margin: 0 auto;
+    &__pic {}
+    &__body {}
+}
+
+.intro {
+    &__pic {}
+}
+.about {
+}
+
+
+.invest {
+    &__list {}
+}
+.attr {
+    &_desc {}
+    &__pic {}
+}
+.team {
+}
+.personlist {
+}
+.person {
+    &__pic {}
+    &__desc {}
+    &__in {}
+    &__mail {}
+}
+.error {
+}
+.form-email {
+}
+.form-soc {
+}
+.footer-link {
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @import '_animate';
 @import '_query';
