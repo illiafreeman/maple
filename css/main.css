@@ -106,6 +106,18 @@ table td {
   padding: 0;
 }
 
+@font-face {
+  font-family: font1;
+  src: url(../font/ArtifexCF-Bold.woff2);
+}
+@font-face {
+  font-family: font2;
+  src: url(../font/ArtifexCF-Book.woff2);
+}
+@font-face {
+  font-family: font3;
+  src: url(../font/ArtifexCF-Heavy.woff2);
+}
 :root {
   --font: "Didact Gothic", sans-serif;
   --font2: "Open Sans", sans-serif;
