@@ -31,10 +31,11 @@ h6 {
     margin: 0;
 }
 h1{
-    font-weight: 600;
-    font-size: 41px;
-    margin-bottom: 69px;
-    text-align: center;
+    font-family: 'font1';
+    font-weight: 900;
+    font-size: 52px;
+    color: var(--gray);
+    border-bottom: 1px solid var(--gray);
 }
 
 input,
@@ -112,11 +113,11 @@ table td {
     src: url(../font/ArtifexCF-Bold.woff2);
 }
 @font-face {
-    font-family: 'font2';
+    font-family: 'font11';
     src: url(../font/ArtifexCF-Book.woff2);
 }
 @font-face {
-    font-family: 'font3';
+    font-family: 'font12';
     src: url(../font/ArtifexCF-Heavy.woff2);
 }
 :root {
@@ -126,6 +127,7 @@ table td {
     --font3: "Open Sans", sans-serif;
     --transition: all 0.2s ease-in-out;
     --transition05: all 0.5s ease-in-out;
+    --gray: #2e2e2e;
 }
 html{
     -webkit-tap-highlight-color: transparent;
@@ -137,12 +139,12 @@ body {
     overflow-x: hidden;
     color: #2e2e2e;;
     font-weight: 400;
-    font-size: 12px;
+    //font-size: 12px;
     line-height: 1.4;
     padding: 0;
     margin: 0;
     font-family: 'font';
-    background: rgb(171, 194, 236);
+    //background: rgb(171, 194, 236);
     padding-top: 100px;
     font-family: (var(--font));
 }
@@ -205,6 +207,7 @@ body {
     left: 0;
     right: 0;
     padding: 32px 0;
+    z-index: 100;
     &__container {
         display: flex;
         justify-content: space-between;
@@ -245,19 +248,26 @@ body {
 .container {
     max-width: 1170px;
     margin: 0 auto;
+    
     &__pic {}
     &__body {}
 }
 
 .intro {
-    min-height: 800px;
+    height: 700px;
     .container{
         position: relative;
+        display: flex;
+        align-items: flex-start;
     }
-
+    h1{
+        align-self: flex-end;
+        width: 40%;
+    }
     &__pic {
         width: 60%;
-        right: -350px;
+        right: -50px;
+        top: -100px;
         position: relative;
     }
 }
